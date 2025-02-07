@@ -1,0 +1,30 @@
+{
+  "name": "saigesystemsstore",
+  "main": "./dist/index.js",
+  "assets": {
+    "directory": "./dist"
+  },
+  "compatibility_date": "2024-11-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true
+  },
+  "upload_source_maps": true,
+  "vars": {
+    "EXAMPLE_VALUE": "example_value"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "SAIGE.systemsStoreDB",
+      "database_id": "d8b4248b-27a0-4be2-8d1b-2ea9d5454b15"
+    }
+  ],
+  "workflows": [
+    {
+      "name": "saigesystemsstore-customer-workflow",
+      "binding": "CUSTOMER_WORKFLOW",
+      "class_name": "CustomerWorkflow"
+    }
+  ]
+}
